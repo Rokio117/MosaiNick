@@ -6,19 +6,95 @@ h1,h2{
     text-align: center;
 }
 
-#color-select-menu{
-    width:50%;
+h1{font-size: 25px;}
+
+h2{font-size: 15px;}
+
+#color-select-menu,#tool-container{
+    width:30vw;
     margin-left:auto;
     margin-right:auto;
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 20px;
 }
 
 .color-select{
-    height: 55px;
-    width:55px;
-    border-radius:10px;
-    border: 5px solid white;
+    box-sizing: border-box;
+    height: 3vw;
+    width:3vw;
+    border-radius:5px;
+    border: 2px solid white;
+    transform: scale(1);
+    border-radius:5px;
     
+}
+
+.tool-outer{
+    padding: 5px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+#tool-outer-select-column,#tool-outer-diagonal-up{
+    transform: rotate(90deg);
+}
+
+.tool{
+    background-color: white;
+    box-sizing: border-box;
+    height: 3vw;
+    width:3vw;
+    
+  
+    transform: scale(1);
+    
+}
+
+img{
+    height: 100%;
+}
+
+.selected{
+    border: 2px solid gold;
+    transform:scale(1.2);
+}
+
+.tool-selected{
+    border: 2px dashed gold;
+    
+    box-sizing: border-box;
+}
+
+.color-select:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#grid-container{
+    width: 30vw;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.grid-row{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
 
 }
+
+.grid-unit{
+    box-sizing: border-box;
+    height: 3vw;
+    width: 3vw;
+    background-color: black;
+    border-radius:2px;
+    border: 2px solid slategray;
+}
+
